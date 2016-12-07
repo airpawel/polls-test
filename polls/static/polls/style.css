@@ -1,0 +1,9 @@
+li a {
+    color: green
+}
+
+body {
+    background: white url("images/Django_0.jpg") no-repeat right bottom;
+    background-size: cover;
+}
+
