@@ -26,7 +26,7 @@ SECRET_KEY = 'h&dq=k$+*lbot(o5me_&&c3e5ul15pgkq4m0h5--3wis0d7h1s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pacio.pythonanywhere.com']
 
 
 # Application definition
@@ -87,11 +87,13 @@ WSGI_APPLICATION = 'DSignage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pacio$adleaf',
+        'NAME': 'pacio$default',
         'HOST': 'pacio.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
         'USER': 'pacio',
         'PASSWORD': 'rodzynkiwczekoladzie93',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
     }
 }
 
