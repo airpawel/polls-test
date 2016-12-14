@@ -87,9 +87,10 @@ WSGI_APPLICATION = 'DSignage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pacio$default',
+        'NAME': 'pacio$adleaf',
         'HOST': 'pacio.mysql.pythonanywhere-services.com',
         'USER': 'pacio',
+        'PORT': '3306',
         'PASSWORD': 'rodzynkiwczekoladzie93',
         'OPTIONS': {
             'sql_mode': 'traditional',
